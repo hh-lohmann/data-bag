@@ -53,6 +53,8 @@ A "data-bag" is meant to be a most minimally predefined JSON object to simplify 
 
 ## Retrieving data
 
+> Note that the following resembles [Node's error-first callback pattern](#node-error-first) but without any deeper relationship besides that there might be something in it
+
   * To be sent from server to client
   * Defined to be a JSON object with properties `data` and `error`
     * in TypeScript terms
@@ -91,3 +93,13 @@ A "data-bag" is meant to be a most minimally predefined JSON object to simplify 
           ```ts
             type data_prop = null | Record<string, unknown>
           ```
+
+
+## References
+
+###### node-error-first
+
+  * [Node.js: JavaScript Asynchronous Programming and Callbacks: Handling errors in callbacks](https://nodejs.org/learn/asynchronous-work/javascript-asynchronous-programming-and-callbacks#handling-errors-in-callbacks)
+
+###### schott-node-error-first
+  * [Fred K. Schott: The Node.js Way - Understanding Error-First Callbacks](https://fredkschott.com/post/2014/03/understanding-error-first-callbacks-in-node-js/)
